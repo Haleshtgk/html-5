@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .audio *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .left p{
+            font-size: 0.9rem;
+            color: white;
+        }
+        .audio{
+            width: 80%;
+            background-color: aquamarine;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 20px;
+        }
+        .left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+        }
+        .rigth button{
+            border: none;
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+        .rigth button:hover{
+            border: 1px solid black;
+        }
+        .rigth button a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Media Tags</h1>
+    </center>
+
+    <hr>
+    <h1>Displaying audio in websites using audio tag</h1>
+    <h1>Example 1</h1>
+    <audio src="./assests/media/rolex_vikram.mp3" controls muted autoplay loop></audio>
+    <hr>
+    <h1>Example 2</h1>
+    <audio controls muted autoplay loop>
+        <source src="./assests/rolex_vikram.mp3">
+    </audio>
+
+    <h2>Example 3</h2>
+    <div class="audio">
+        <div class="left">
+            <audio src="./assests/media/rolex_vikram.mp3" controls></audio>
+            <img src="" alt="">
+            <div>
+                <h4>Rolex_Vikram</h4>
+                <p>Top-Flow</p>
+            </div>
+        </div>
+        <div class="right">
+            <button type="button"><a href="" download="./assests/media/rolex_vikram.mp3">Download</a></button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        meter{
+            width: 300px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Defult Meter tag</h1>
+    <meter></meter>
+    <br><hr>
+    <h1>Static Meter Tag</h1>
+    <meter value="50" min="0" max="100"></meter>
+    <br><hr>
+    <h1>Dyanmic Meter Tag</h1>
+    <meter value="10" max="100" min="0" low="20" high="80" id="m1"></meter><br>
+    <small id="result"></small>
+    <script>
+        const metertag = document.getElementById("m1")
+        const result = document.getElementById('result')
+
+        function driveStorage(){
+            result.innerText = 'Downloading ' + metertag.value + ' %'
+            if(metertag.value == 100){
+                result.innerHTML = "<span style='color:green'>Done</span>"
+                return;
+            }
+            else{
+                metertag.value++
+            }
+        }
+        setInterval('driveStorage()', 100)
+    </script>
+</body>
+</html>

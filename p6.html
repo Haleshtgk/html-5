@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            min-height: 100vh;
+            background-color: aliceblue;
+            padding: 10px;
+        }
+        details{
+            width: 70%;
+            background-color: white;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 20px;
+        }
+        summary{
+            padding: 20px;
+            font-size: 1.4rem;
+            border: 2px solid pink;
+            border-radius: 10px;
+            font-weight: 600;
+            color: plum;
+        }
+        summary:hover{
+            border: 2px solid black;
+            color: black;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        .heading{
+            font-size: 3.3rem;
+            color: black;
+        }
+        p{
+            color: black;
+            margin-bottom: 40px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Details Tag</h1>
+        <p>The details tag used to to hide or dispaly the content on user demand and we need to use summary tag inside the det tag to give heading for that det </p>
+    </center>
+    <section class="container">
+        <center>
+            <h1 class="heading">What the FAQ</h1>
+            <p><i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, ratione. </i></p>
+        </center>
+        <details>
+            <summary>What factor should i consider when purchasing insurence</summary>
+            <p style="padding: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ratione minus sed rem at rerum vero ipsum tempore quasi maxime consequatur, soluta voluptates dicta accusantium nam quam deleniti maiores praesentium.</p>
+        </details>
+        <details>
+            <summary>What factor should i consider when purchasing insurence</summary>
+            <p style="padding: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ratione minus sed rem at rerum vero ipsum tempore quasi maxime consequatur, soluta voluptates dicta accusantium nam quam deleniti maiores praesentium.</p>
+        </details>
+    </section>
+
+</body>
+</html>

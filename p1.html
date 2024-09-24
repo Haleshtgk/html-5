@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        section{
+            background-color: rgb(156, 161, 161);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .card{
+            width: 600px;
+            background-color: #fff;
+            min-height: 120vh;
+            margin: auto;
+            background-image: url(./wave.svg);
+            background-size: cover;
+            padding: 20px;
+        }
+        .top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+        }
+        .left{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th{
+            padding: 10px;
+            background-color: #5050504d;
+        }
+        table td{
+            padding: 10px;
+            border: none;
+            align-items: center;
+        }
+        small{
+            color: rgb(62, 62, 62);
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <div class="top">
+                <img src="./LOGO.jpg" alt="Logo image" width="70px ">
+                <h1 style="font-size: 2rem; font-weight: 1000; height: max-content;">INVOICE</h1>
+            </div>
+            <div class="left">
+                <p><b>BILLED TO:</b><br>HALESH T G K <br>+918792016184 <br>Global Academy Of Tech</p>
+                <p>Invoice no. 1234 <br> 16<sup>th</sup> Aug 2024</p>
+            </div>
+            <table border="1">
+                <tr>
+                    <th>Item</th>
+                    <th>Quanitity</th>
+                    <th>Unit Price</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>Eggshell Camisol top</td>
+                    <td>1</td>
+                    <td>$123</td>
+                    <td>$123</td>
+                </tr>
+                <tr>
+                    <td>Cuban Collar Shirt</td>
+                    <td>2</td>
+                    <td>$127</td>
+                    <td>$254</td>
+                </tr>
+                <tr>
+                    <td>Floral Cotton Dress</td>
+                    <td>1</td>
+                    <td>$123</td>
+                    <td>$123</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>Subtotal</b></td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>Tax(0%)</b></td>
+                    <td>$0</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><h2>Total</h2></td>
+                    <td><h2>$500</h2></td>
+                </tr>
+
+            </table>
+            <br>
+            <p><h3>Thank You!</h3></p>
+            <div class="bottom">
+                <p><b>PAYMENT INFORMATION</b><br>Briard Bank<br>Account Name: ABC<br>Account no.:123-456-7890<br>Pay by 5 July 2025</p>
+                <p>Samira Hadid <br> 123 Anywhere st., Any City, ST 12345</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

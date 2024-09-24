@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: bisque;
+        }
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+            margin: auto;
+            margin-top: 1%;
+            background-color: aquamarine;
+            padding: 30px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .brand {
+            font-size: 24px;
+            font-weight: bold;
+            transform: translateX(-230px);
+        }
+        .opt{
+            justify-content: space-between;
+            display: flex;
+            gap: 40px;
+            transform: translateX(90px);
+            color: blueviolet;
+        }
+        .box1{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .img{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="brand" style="border-left: -90px;"><h1>deem</h1></div>
+        <div class="opt">
+            <a href="#">Stories</a>
+            <a href="#">Shop</a>
+            <a href="#">Audio</a>
+            <a href="#">Symposium</a>
+            <a href="#">Reference Room</a>
+            <a href="#">Stockists</a>
+            <a href="#">About</a>
+        </div>
+    </nav>
+    <nav class="box1">
+        <div>
+            <figure style="border: 1px solid black;">
+                <img src="https://images.squarespace-cdn.com/content/v1/5ca8c92b92441be122f8b796/1721105814861-IYKNADMKUDMJB64MTFNZ/Deem-Sea+Change-Thumbnail+750x500.jpg?format=750w" alt="" width="300" height="300" style="align-items: center; justify-content: center;">
+                <figcaption>
+                    <p>Sea Change: Alyssa-Amor Gibbons and Avinash Persaud on Imperialism, Designing for Disaster, and How the Caribbean Is Leading Climate Finance Reform, read conversation</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure style="border: 1px solid black;">
+                <img src="https://images.squarespace-cdn.com/content/v1/5ca8c92b92441be122f8b796/1719020194479-VL3AT6OFVMBHIVM17UUA/Thumbnail+750x500+%281%29.jpg?format=750w" alt="" width="300" height="300">
+                <figcaption>
+                    <p>Jeff Goodell and Kathy Baughman McLeod on Extreme Heat, the Perils of Apathy, and Why It’s Not Too Late, read conversation</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure style="border: 1px solid black;">
+                <img src="https://images.squarespace-cdn.com/content/v1/5ca8c92b92441be122f8b796/1718136444227-M0ZUYFP65FR7VPCH67KI/Thumbnail+2+750x500.jpeg?format=750w" alt="" width="300" height="300">
+                <figcaption>
+                    <p>
+                        Designing for Dignity 02: A Convening of Possibilities, read recap.
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+    </nav>
+    
+</body>
+</html>
