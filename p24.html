@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            width: 500px;
+            height: 500px;
+            border: 3px solid black;
+            margin: auto;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>HTML CANVAS TAG</h1>
+        <p>This is the canvas tag it is used to describe the graphics in webpages using scripting lang like javascript</p>
+    </center>
+    <br>
+    <canvas id="canvas1" width="400" height="400">
+
+    </canvas>
+    <p><b>Note: It is always necessary to specofy the id attribute and the height & width attribute to define the size of the cancas. You can have multiple canvas elemment on one HTML page.</b></p>
+
+    <script>
+        const canvas1 = document.getElementById('canvas1').getContext('2d');
+        canvas1.fillStyle = "green";
+        canvas1.arc(200, 50, 30, 0,Math.PI * 2, false); 
+        //(x, y, radius, strating_point, arc_value, ending anlgle)
+        canvas1.fill();
+        canvas1.stroke();
+    </script>
+</body>
+</html>
